@@ -37,10 +37,10 @@ class Launch extends Component {
             </div>
             <div className={styles['card-content']}>
               <h4>{v.name}</h4>
-              <p>{v.id}</p>
+              <p>{v.missions.description}</p>
             </div>
             <div className={styles['card-footer']}>
-              <h4>{v.missions.description}</h4>
+              <h4>{v.id}</h4>
               <div className={styles.position}>
                 <Icon type='environment' />{' '}{v.position}
               </div>

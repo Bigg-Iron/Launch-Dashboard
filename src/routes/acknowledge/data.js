@@ -25,9 +25,9 @@ module.exports = [
   },
   {
     id: 5,
-    title: 'Antd Admin',
+    title: 'Launch Box',
     icon: 'github',
-    href: 'https://github.com/zuiidea/antd-admin'
+    href: 'https://github.com/Bigg-Iron/Project_3'
   },
   {
     id: 6,

@@ -8,7 +8,7 @@ class ImageCard extends React.Component {
   state = {launches: [] };
 
   getLaunches(){
-    axios.get('https://launchlibrary.net/1.3/launch/2018-01-27?next=30')
+    axios.get('https://launchlibrary.net/1.3/launch/2018-01-27?next=9')
     .then(res => {
       console.log(res.data.launches);
       this.setState({ launches: res.data.launches});
@@ -25,7 +25,6 @@ class ImageCard extends React.Component {
 
     return (
       <div>
-        {/* <Launch /> */}
         <Row gutter={32} className={styles.showcase}>
           {
               launches && launches.map((v, k) => {
@@ -35,14 +34,14 @@ class ImageCard extends React.Component {
                       bordered={false}
                       noHovering>
                       <div className={styles['card-header']}>
-                        <img src= {v.rocket.imageURL || "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png"} width = "300" alt="" />
+                        <img src= {v.rocket.imageURL || "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png"} width = "600" height = "400" alt="" />
                       </div>
                       <div className={styles['card-content']}>
                         <h4>{v.name}</h4>
                         <p>{v.missions.descriptions}</p>
                       </div>
                       <div className={styles['card-footer']}>
-                        <h4>{v.id}</h4>
+                        <h4>{v.location.name}</h4>
                         <div className={styles.position}>
                           <Icon type='environment' />{' '}{v.position}
                         </div>

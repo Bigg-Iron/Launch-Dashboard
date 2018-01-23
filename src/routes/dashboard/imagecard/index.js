@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Card, Icon } from 'antd'
 import styles from './imagecard.less'
+import Launch from './launch'
 
 class ImageCard extends React.Component {
   render () {
@@ -8,6 +9,7 @@ class ImageCard extends React.Component {
 
     return (
       <div>
+        <Launch />
         <Row gutter={32} className={styles.showcase}>
           {
               imagecard && imagecard.map((v, k) => {

@@ -6,28 +6,28 @@ export default {
       {
         icon: 'book',
         title: 'Bookings',
-        number: 184,
+        number: 400,
         color: 'green',
         sub: 'Get More Space...',
         subIcon: 'info-circle'
       }, {
         icon: 'eye-o',
         title: 'Views',
-        number: 75,
+        number: 300,
         color: 'pink',
         sub: 'Google Analytics',
         subIcon: 'tag'
       }, {
         icon: 'calendar',
         title: 'Next Launch in',
-        number: 3,
+        number: 200,
         color: 'blue',
         sub: 'Days',
         subIcon: 'calendar'
       }, {
         icon: 'team',
         title: 'Followers',
-        number: 245,
+        number: 100,
         color: 'yellow',
         sub: 'Just Updated',
         subIcon: 'solution'
@@ -42,37 +42,37 @@ export default {
         position: 'City, Country'
       },
       {
-        image: '2',
+        image: '1',
         title: 'here is title',
         desc: 'here is desc ...',
         footerTitle: 'footer title',
         position: 'London, UK'
       },
       {
-        image: '3',
+        image: '1',
         title: 'here is title',
         desc: 'here is desc ...',
         footerTitle: 'footer title',
         position: 'City, Country'
       },
       {
-        image: '4',
+        image: '1',
         title: 'here is title',
         desc: 'here is desc，Ba la Ba la Ba la ...',
         footerTitle: 'footer title',
         position: 'Peiking, China'
       },
       {
-        image: '5',
+        image: '1',
         title: 'Title',
-        desc: 'here is desc，Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la ...',
+        desc: 'here is desc，Ba la Ba la Ba la Ba la Ba  ...',
         footerTitle: 'footer title',
         position: 'City, Country'
       },
       {
-        image: '6',
+        image: '1',
         title: 'here is title',
-        desc: 'here is desc，Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la Ba la ...',
+        desc: 'here is desc，Ba la Ba la Ba la Ba la Bla ...',
         footerTitle: 'footer title',
         position: 'City, Country'
       }

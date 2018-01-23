@@ -2,7 +2,8 @@ import React, { PropTypes } from 'react'
 import { connect } from 'dva'
 import FigureCard from './figurecard'
 import ImageCard from './imagecard'
-// import MapCard from './mapcard'
+import MapCard from './mapcard'
+import Launch from './imagecard'
 
 class Dashboard extends React.Component {
   render () {
@@ -18,7 +19,9 @@ class Dashboard extends React.Component {
 
     return (
       <div>
+      
         <FigureCard {...figurecardProps} />
+        
         <ImageCard {...imagecardProps} />
       </div>
     )

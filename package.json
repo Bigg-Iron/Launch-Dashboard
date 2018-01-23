@@ -1,9 +1,10 @@
 {
   "name": "little-a-dashboard",
   "version": "0.0.1",
-  "description": "Base on React.js、Ant Design、dva.js、roadhog",
+  "description": "Based on React.js、Ant Design、dva.js、roadhog",
   "dependencies": {
     "antd": "2.12.2",
+    "axios": "^0.16.2",
     "classnames": "^2.2.5",
     "dva": "^1.2.1",
     "dva-loading": "^0.2.1",

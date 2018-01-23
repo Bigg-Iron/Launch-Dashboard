@@ -4,32 +4,32 @@ import classnames from 'classnames'
 import { Row, Col, Card, Icon, Button, Input, Form, Select, AutoComplete, Tooltip, Cascader, Checkbox } from 'antd'
 import styles from './profile.less'
 
-const imgAvatar = require('../../assets/img/marc.jpg')
+const imgAvatar = require('../../assets/img/logo.png')
 
 const FormItem = Form.Item
 const Option = Select.Option
 const AutoCompleteOption = AutoComplete.Option
 
 const residences = [{
-  value: 'zhejiang',
-  label: 'Zhejiang',
+  value: 'San Diego',
+  label: 'USA',
   children: [{
-    value: 'hangzhou',
-    label: 'Hangzhou',
+    value: 'San Diego',
+    label: 'CA',
     children: [{
-      value: 'xihu',
-      label: 'West Lake'
+      value: 'San Diego',
+      label: 'San Diego'
     }]
   }]
 }, {
-  value: 'jiangsu',
-  label: 'Jiangsu',
+  value: 'San Diego',
+  label: 'CA',
   children: [{
-    value: 'nanjing',
-    label: 'Nanjing',
+    value: 'San Diego',
+    label: 'CA',
     children: [{
-      value: 'zhonghuamen',
-      label: 'Zhong Hua Men'
+      value: 'San Diego',
+      label: 'CA'
     }]
   }]
 }]
@@ -61,7 +61,7 @@ class Profile extends React.Component {
   checkPassword = (rule, value, callback) => {
     const form = this.props.form;
     if (value && value !== form.getFieldValue('password')) {
-      callback('Two passwords that you enter is inconsistent!');
+      callback('The passwords do not match');
     } else {
       callback();
     }
@@ -111,11 +111,10 @@ class Profile extends React.Component {
       }
     }
     const prefixSelector = getFieldDecorator('prefix', {
-      initialValue: '86'
+      initialValue: '1'
     })(
       <Select style={{ width: 60 }}>
-        <Option value='86'>+86</Option>
-        <Option value='87'>+87</Option>
+        <Option value='1'>+1</Option>
       </Select>
     )
 
@@ -203,7 +202,7 @@ class Profile extends React.Component {
                 >
                   {getFieldDecorator('residence', {
                     initialValue: ['zhejiang', 'hangzhou', 'xihu'],
-                    rules: [{ type: 'array', required: true, message: 'Please select your habitual residence!' }]
+                    rules: [{ type: 'array', required: true, message: 'Please select your residence!' }]
                   })(
                     <Cascader options={residences} />
                   )}
@@ -238,7 +237,7 @@ class Profile extends React.Component {
                   {getFieldDecorator('agreement', {
                     valuePropName: 'checked'
                   })(
-                    <Checkbox>I have read the <a href=''>agreement</a></Checkbox>
+                    <Checkbox>I have read the <a href=''>terms and conditions</a></Checkbox>
                   )}
                 </FormItem>
                 <FormItem {...tailFormItemLayout}>
@@ -260,8 +259,8 @@ class Profile extends React.Component {
                 <a><img className={styles.img} src={imgAvatar} /></a>
               </div>}>
               <div className={styles['card-content']}>
-                <h6>CEO / Co-Founder</h6>
-                <h4>Lorenzo Bartolo</h4>
+                <h6> Launch Box </h6>
+                <h4> Admin</h4>
                 <p>
                    I love you like Kanye loves Kanye.
                 </p>

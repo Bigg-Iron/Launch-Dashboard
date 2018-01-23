@@ -10,6 +10,7 @@ const img3 = require('../../assets/img/sidebar-3.jpg')
 const img4 = require('../../assets/img/sidebar-4.jpg')
 
 
+
 class Setting extends React.Component {
 
   handleSettingColor = (value) => {

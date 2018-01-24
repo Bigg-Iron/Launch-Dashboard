@@ -31,13 +31,18 @@ class ImageCard extends React.Component {
         <Row gutter={32} className={styles.showcase}>
           {
               launches && launches.map((v, k) => {
+                let image = v.rocket.imageURL
+
+               if (image === "Array"){
+                image = "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png"
+                  }
                 return (
                   <Col xs={12} sm={12} md={12} lg={8} xl={8} key={k} style={{ marginBottom: 50 }}>
                     <Card
                       bordered={false}
                       noHovering>
                       <div className={styles['card-header']}>
-                        <img src= {v.rocket.imageURL || "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png"} width = "600" height = "400" alt="" />
+                        <img src= {image} width = "600" height = "400" alt="" />
                       </div>
                       <div className={styles['card-content']}>
                         <h5>{v.name}</h5>
@@ -58,7 +63,7 @@ class ImageCard extends React.Component {
                                 background: '#fff url(//bit.ly/1Nqn9HU)'
                               },
                               console.log('Info button clicked'),
-                              console.log(this))}
+                              console.log(v.name))}
 
                               > Info </Button>
 

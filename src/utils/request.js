@@ -63,7 +63,7 @@ function request (url, options) {
     .then(check401)
     .then(jsonParse)
     .catch((err) => {
-      throw new Error(`${err.message}`, err.message || '错误')
+      throw new Error(`${err.message}`, err.message || 'error')
     })
 }
 

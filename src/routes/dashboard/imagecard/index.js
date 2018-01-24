@@ -1,8 +1,11 @@
 import React from 'react'
-import { Row, Col, Card, Icon } from 'antd'
+import { Row, Col, Card, Icon, Button } from 'antd'
 import styles from './imagecard.less'
 // import Launch from './launch'
 import axios from "axios";
+import swal from 'sweetalert2'
+import SweetAlert from "../../sweetalert"
+
 
 class ImageCard extends React.Component {
   state = {launches: [] };
@@ -37,13 +40,29 @@ class ImageCard extends React.Component {
                         <img src= {v.rocket.imageURL || "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png"} width = "600" height = "400" alt="" />
                       </div>
                       <div className={styles['card-content']}>
-                        <h4>{v.name}</h4>
+                        <h5>{v.name}</h5>
                         <p>{v.missions.descriptions}</p>
                       </div>
                       <div className={styles['card-footer']}>
-                        <h4>{v.location.name}</h4>
+                        <h5>{v.location.name}</h5>
                         <div className={styles.position}>
+
                           <Icon type='environment' />{' '}{v.position}
+
+                            <Button type='primary' size='default'
+                              onClick={() => this.handleAlert(
+                              {
+                                title: 'Custom width, padding, background.',
+                                width: 600,
+                                padding: 100,
+                                background: '#fff url(//bit.ly/1Nqn9HU)'
+                              },
+                              console.log('Info button clicked'),
+                              console.log(this))}
+
+                              > Info </Button>
+
+
                         </div>
                       </div>
                     </Card>

@@ -20,9 +20,7 @@ class Header extends React.Component {
 
     const msgContent = (
       <div>
-        <p><a>You are awesome!</a></p>
-        <p><a>You have 5 new tasks</a></p>
-        <p><a>Alert</a></p>
+        <p><a>There are 9 new launches</a></p>
       </div>
     )
 
@@ -83,7 +81,7 @@ class Header extends React.Component {
               <li>
                 <a>
                   <Popover overlayStyle={popoverStyle} content={msgContent} placement='bottomRight' title='3 unread message'>
-                    <Badge count={3}>
+                    <Badge count={1}>
                       <Avatar size='small' icon='notification' style={avatarStyle} />
                     </Badge>
                   </Popover>

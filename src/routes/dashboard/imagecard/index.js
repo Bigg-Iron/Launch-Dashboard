@@ -5,9 +5,14 @@ import styles from './imagecard.less'
 import axios from "axios";
 import swal from 'sweetalert2'
 import SweetAlert from "../../sweetalert"
+import * as sa2css from 'sweetalert2/dist/sweetalert2.min.css'
 
 
 class ImageCard extends React.Component {
+  handleAlert = (props) => {
+    swal(props);
+  }
+
   state = {launches: [] };
 
   getLaunches(){
@@ -52,18 +57,20 @@ class ImageCard extends React.Component {
                         <h5>{v.location.name}</h5>
                         <div className={styles.position}>
 
+                          {/* <SweetAlert /> */}
+
                           <Icon type='environment' />{' '}{v.position}
 
                             <Button type='primary' size='default'
+                            
                               onClick={() => this.handleAlert(
                               {
-                                title: 'Custom width, padding, background.',
+                                text: ` ${v.missions[0].description}`,
                                 width: 600,
-                                padding: 100,
-                                background: '#fff url(//bit.ly/1Nqn9HU)'
+                                padding: 100
                               },
                               console.log('Info button clicked'),
-                              console.log(v.name))}
+                              console.log(v.missions[0].description))}
 
                               > Info </Button>
 

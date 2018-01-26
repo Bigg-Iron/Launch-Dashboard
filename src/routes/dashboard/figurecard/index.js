@@ -13,6 +13,7 @@ class FigureCard extends React.Component {
         <Row gutter={16} className={styles.showcase}>
           {
             figurecard.map((v, k) => {
+              console.log(v,k)
               return (
                 <Col xs={24} sm={24} md={12} lg={6} xl={6} key={k} style={{ marginBottom: 30 }}>
                   <Card

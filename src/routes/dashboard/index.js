@@ -20,7 +20,7 @@ class Dashboard extends React.Component {
     return (
       <div>
       
-        <FigureCard {...figurecardProps} />
+        {/* <FigureCard {...figurecardProps} /> */}
         
         <ImageCard {...imagecardProps} />
         

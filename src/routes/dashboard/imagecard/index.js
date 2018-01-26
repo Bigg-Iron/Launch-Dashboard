@@ -65,6 +65,7 @@ class ImageCard extends React.Component {
                             
                               onClick={() => this.handleAlert(
                               {
+                                title: ` ${v.missions[0].name}`,
                                 text: ` ${v.missions[0].description}`,
                                 width: 600,
                                 padding: 100

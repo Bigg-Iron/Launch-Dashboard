@@ -35,7 +35,7 @@ class Menus extends React.Component {
             <Icon type='user' />User Profile
           </Link>
         </Menu.Item>
-        <SubMenu key='component' title={<span><Icon type='bars' /><span>Components</span></span>}>
+        {/* <SubMenu key='component' title={<span><Icon type='bars' /><span>Components</span></span>}>
           <Menu.Item key='alert'>
             <Link to='/alert' style={{color: '#999'}}>
               Alert
@@ -66,7 +66,7 @@ class Menus extends React.Component {
               Table
             </Link>
           </Menu.Item>
-        </SubMenu>
+        </SubMenu> */}
         <Menu.Item key='setting'>
           <Link to='/setting'>
             <Icon type='setting' />Setting

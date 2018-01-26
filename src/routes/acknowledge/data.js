@@ -17,12 +17,12 @@ module.exports = [
     icon: 'github',
     href: 'https://github.com/creativetimofficial'
   },
-  {
-    id: 4,
-    title: 'Angular Material Dashboard',
-    icon: 'github',
-    href: 'https://github.com/wangdicoder/angular-material-dashboard'
-  },
+  // {
+  //   id: 4,
+  //   title: 'Angular Material Dashboard',
+  //   icon: 'github',
+  //   href: 'https://github.com/wangdicoder/angular-material-dashboard'
+  // },
   {
     id: 5,
     title: 'Launch Box',
@@ -35,16 +35,16 @@ module.exports = [
     icon: 'github',
     href: 'https://github.com/limonte/sweetalert2'
   },
-  {
-    id: 7,
-    title: 'Google Map React',
-    icon: 'github',
-    href: 'https://github.com/istarkov/google-map-react'
-  },
-  {
-    id: 8,
-    title: 'Echarts For React',
-    icon: 'github',
-    href: 'https://github.com/hustcc/echarts-for-react'
-  }
+  // {
+  //   id: 7,
+  //   title: 'Google Map React',
+  //   icon: 'github',
+  //   href: 'https://github.com/istarkov/google-map-react'
+  // },
+  // {
+  //   id: 8,
+  //   title: 'Echarts For React',
+  //   icon: 'github',
+  //   href: 'https://github.com/hustcc/echarts-for-react'
+  // }
 ]

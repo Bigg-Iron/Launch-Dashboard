@@ -6,6 +6,7 @@ import axios from "axios";
 import swal from 'sweetalert2'
 import SweetAlert from "../../sweetalert"
 import * as sa2css from 'sweetalert2/dist/sweetalert2.min.css'
+import FavoriteButton from '../FavoriteButton/FavoriteButton';
 
 
 class ImageCard extends React.Component {
@@ -74,6 +75,8 @@ class ImageCard extends React.Component {
                               console.log(v.missions[0].description))}
 
                               > Info </Button>
+
+                              {/* <FavoriteButton /> */}
 
 
                         </div>

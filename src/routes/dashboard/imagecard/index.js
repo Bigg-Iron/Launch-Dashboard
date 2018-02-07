@@ -6,7 +6,6 @@ import axios from "axios";
 import swal from 'sweetalert2'
 import SweetAlert from "../../sweetalert"
 import * as sa2css from 'sweetalert2/dist/sweetalert2.min.css'
-import FavoriteButton from '../FavoriteButton/FavoriteButton';
 
 
 class ImageCard extends React.Component {
@@ -55,19 +54,17 @@ class ImageCard extends React.Component {
                         <p>{v.missions.descriptions}</p>
                       </div>
                       <div className={styles['card-footer']}>
-                        <h5>{v.location.name}</h5>
+                        {/* <h6>{v.location.name}</h6> */}
                         <div className={styles.position}>
 
-                          {/* <SweetAlert /> */}
-
-                          <Icon type='environment' />{' '}{v.position}
+                          {/* <Icon type='environment' />{' '}{v.position} */}
 
                             <Button type='primary' size='default'
                             
                               onClick={() => this.handleAlert(
                               {
                                 title: ` ${v.missions[0].name}`,
-                                text: ` ${v.missions[0].description}`,
+                                text: ` ${v.missions[0].description} Location: ${v.location.name} `,
                                 width: 600,
                                 padding: 100
                               },
@@ -75,8 +72,6 @@ class ImageCard extends React.Component {
                               console.log(v.missions[0].description))}
 
                               > Info </Button>
-
-                              {/* <FavoriteButton /> */}
 
 
                         </div>

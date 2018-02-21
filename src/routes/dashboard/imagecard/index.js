@@ -69,7 +69,8 @@ class ImageCard extends React.Component {
                                 padding: 100
                               },
                               console.log('Info button clicked'),
-                              console.log(v.missions[0].description))}
+                              console.log(v.rocket)
+                              )}
 
                               > Info </Button>
 
